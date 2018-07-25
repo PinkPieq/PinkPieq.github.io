@@ -2,18 +2,56 @@ body {
   background: pink;
   font-family: system-ui, sans-serif;
   font-size: 20px;
+  margin: 2em;
+}
+
+img{
+  max-width: 100%;
 }
 
 nav {
   background-color: rgba(255,255,255,0.75);
   display: flex;
   flex-direction:row-reverse;
+
 }
 
 nav a {
-  padding: 20px
+  color: violet;
+  padding: 20px;
+  text-decoration: none;
+  transition: background-color 0.4s,
+  transform: scale(1.03);
 }
 
 nav a.active {
-  background: violet;
+  background: rgba(255,102,0,0.5);
+  transition: background-color 0.4s;
+}
+
+nav a:hover{
+  background: rgba(255,102,0,0.3);
+
+  transform: scale(1.05);
+}
+
+.cardgroup{
+  display: flex;
+}
+
+.card {
+  background: rgba(255,255,255,0.5);
+  border-radius: 20px;
+  box-shadow: 0 3px 3px lightblue,
+            inset 3px -2px 4px lightblue;
+  padding: 20px;
+  border: solid 10px violet;
+  margin: 10px;
+  flex-basis: 1;
+  transition: box-shadow 1s, transform 1s;
+}
+
+.card:hover{
+  box-shadow: 0 3px 6px blue;
+  transform: scale(1.05);
 }
