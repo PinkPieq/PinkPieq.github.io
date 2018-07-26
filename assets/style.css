@@ -70,7 +70,7 @@ nav a:hover{
   nav{
     flex-direction: column;
     margin-right: 40px;
-  
+
    }
 
 }
@@ -85,4 +85,9 @@ nav a:hover{
     flex-direction: row;
     }
 
+ }
+ @media (min-width: 550px) and (max-width: 650px) {
+   body{
+     background: lightblue;
+   }
  }
