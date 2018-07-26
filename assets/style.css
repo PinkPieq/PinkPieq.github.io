@@ -2,7 +2,7 @@ body {
   background: pink;
   font-family: system-ui, sans-serif;
   font-size: 20px;
-  margin: 2em;
+  margin: 1em;
 }
 
 img{
@@ -59,18 +59,30 @@ nav a:hover{
   transform: scale(1.05);
 }
 
+
+
 @media (min-width: 500px) {
   body {
     background: purple;
-  }
+      display: flex;
+      margin: 2em;
+     }
+  nav{
+    flex-direction: column;
+    margin-right: 40px;
+  
+   }
 
 }
 
 @media (min-width: 820px){
   body{
     background: magenta;
+
   }
+
   .cardgroup {
     flex-direction: row;
     }
+
  }
